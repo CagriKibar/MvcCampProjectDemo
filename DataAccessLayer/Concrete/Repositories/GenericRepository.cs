@@ -16,7 +16,7 @@ namespace DataAccessLayer.Concrete.Repositories
         public GenericRepository()
         {
             _object = context.Set<T>();
-            context.SaveChanges();
+           
         }
         public void Add(T p)
         {
