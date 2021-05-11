@@ -22,6 +22,11 @@ namespace DataAccessLayer.Concrete.Repositories
             throw new NotImplementedException();
         }
 
+        public Writer Get(Expression<Func<Writer, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Writer> List()
         {
             throw new NotImplementedException();

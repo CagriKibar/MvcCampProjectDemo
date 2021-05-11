@@ -26,6 +26,11 @@ namespace DataAccessLayer.Concrete.Repositories
             context.SaveChanges();
         }
 
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);//geriye sadece 1 değer döndürmek için kullanılır.
+        }
+
         public List<Category> List()
         {
             return _object.ToList();
