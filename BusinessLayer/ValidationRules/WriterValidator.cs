@@ -17,9 +17,16 @@ namespace BusinessLayer.ValidationRules
             RuleFor(p => p.WriterAbout).NotEmpty().WithMessage("Hakkımda Kısmını  Boş Geçemezsiniz");
             RuleFor(p => p.WriterLastName).MinimumLength(2).WithMessage("Lütfen En Az 2 Karakter Girişi Yapınız");
             RuleFor(p => p.WriterLastName).MaximumLength(50).WithMessage("Lütfen 50 Karakterden Fazla Değer Girişi Yapınız");
+            RuleFor(p => p.WriterAbout).Must(StartWithA);
+           
+            
 
 
 
+        }
+        private bool StartWithA(string args)
+        {
+            return args.StartsWith("A");
         }
     }
 }
