@@ -12,27 +12,31 @@
     @Html.Label("Yazar Adı")
     @Html.TextBoxFor(p => p.WriterName, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterName)
-    <br /> 
+    <br />
     @Html.Label("Yazar Soy Adı")
     @Html.TextBoxFor(p => p.WriterLastName, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterLastName)
-    <br /> 
+    <br />
     @Html.Label("Yazar Mail")
     @Html.TextBoxFor(p => p.WriterMail, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterMail)
-    <br /> 
+    <br />
     @Html.Label("Yazar Şifre")
     @Html.TextBoxFor(p => p.WriterPassword, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterPassword)
-    <br /> 
+    <br />
     @Html.Label("Yazar Görsel Link")
     @Html.TextBoxFor(p => p.WriterImage, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterImage)
-    <br /> 
+    <br />
+    @Html.Label("Yazar Unvan")
+    @Html.TextBoxFor(p => p.WriterTitle, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.WriterTitle)
+    <br />
     @Html.Label("Yazar Hakkında")
     @Html.TextBoxFor(p => p.WriterAbout, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.WriterAbout)
-    <br /> 
+    <br />
     <button class="btn btn-info">Yazarı Ekle</button>
 
 </div>
