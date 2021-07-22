@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
         }
         public Message GetByID(int id)
         {
-            return _messageDal.Get(p => p.MessageID==id);
+            return _messageDal.Get(p => p.MessageID == id);
         }
 
         public List<Message> GetMessagesInbox()
